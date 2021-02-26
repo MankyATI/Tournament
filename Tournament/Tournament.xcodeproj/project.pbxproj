@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA3CEAB525E9206E006D1966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEAB425E9206E006D1966 /* AppDelegate.swift */; };
+		CA3CEABC25E9206E006D1966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEABA25E9206E006D1966 /* Main.storyboard */; };
+		CA3CEABF25E9206E006D1966 /* Tournament.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEABD25E9206E006D1966 /* Tournament.xcdatamodeld */; };
+		CA3CEAC125E92071006D1966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEAC025E92071006D1966 /* Assets.xcassets */; };
+		CA3CEAC425E92071006D1966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEAC225E92071006D1966 /* LaunchScreen.storyboard */; };
+		CA3CEACF25E92071006D1966 /* TournamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEACE25E92071006D1966 /* TournamentTests.swift */; };
+		CA3CEADA25E92071006D1966 /* TournamentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEAD925E92071006D1966 /* TournamentUITests.swift */; };
+		CA3CEB2425E920D3006D1966 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0025E920D3006D1966 /* HomeViewModel.swift */; };
+		CA3CEB2525E920D3006D1966 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0225E920D3006D1966 /* HomeViewPresenter.swift */; };
+		CA3CEB2625E920D3006D1966 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0425E920D3006D1966 /* HomeViewController.swift */; };
+		CA3CEB2725E920D3006D1966 /* HomeViewInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0625E920D3006D1966 /* HomeViewInterator.swift */; };
+		CA3CEB2825E920D3006D1966 /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0825E920D3006D1966 /* HomeViewRouter.swift */; };
+		CA3CEB2925E920D3006D1966 /* NameAndImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0C25E920D3006D1966 /* NameAndImageCell.swift */; };
+		CA3CEB2A25E920D3006D1966 /* NameAndImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEB0D25E920D3006D1966 /* NameAndImageCell.xib */; };
+		CA3CEB2B25E920D3006D1966 /* UIFont+TMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB0F25E920D3006D1966 /* UIFont+TMFont.swift */; };
+		CA3CEB2C25E920D3006D1966 /* UILable+TMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1025E920D3006D1966 /* UILable+TMLabel.swift */; };
+		CA3CEB2D25E920D3006D1966 /* UITableView+TMTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1125E920D3006D1966 /* UITableView+TMTable.swift */; };
+		CA3CEB2E25E920D3006D1966 /* UIColor+TMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1225E920D3006D1966 /* UIColor+TMColor.swift */; };
+		CA3CEB2F25E920D3006D1966 /* UIButton+TMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1325E920D3006D1966 /* UIButton+TMButton.swift */; };
+		CA3CEB3025E920D3006D1966 /* UIImageView+TMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1425E920D3006D1966 /* UIImageView+TMImageView.swift */; };
+		CA3CEB3125E920D3006D1966 /* TournamenrListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1925E920D3006D1966 /* TournamenrListModel.swift */; };
+		CA3CEB3225E920D3006D1966 /* TournamentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1B25E920D3006D1966 /* TournamentListPresenter.swift */; };
+		CA3CEB3325E920D3006D1966 /* TournamentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1D25E920D3006D1966 /* TournamentListViewController.swift */; };
+		CA3CEB3425E920D3006D1966 /* TournamentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB1E25E920D3006D1966 /* TournamentListCell.swift */; };
+		CA3CEB3525E920D3006D1966 /* TournamentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEB1F25E920D3006D1966 /* TournamentListCell.xib */; };
+		CA3CEB3625E920D3006D1966 /* TournamentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB2125E920D3006D1966 /* TournamentListInteractor.swift */; };
+		CA3CEB3725E920D3006D1966 /* TournamentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEB2325E920D3006D1966 /* TournamentListRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA3CEACB25E92071006D1966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA3CEAA925E9206E006D1966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3CEAB025E9206E006D1966;
+			remoteInfo = Tournament;
+		};
+		CA3CEAD625E92071006D1966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA3CEAA925E9206E006D1966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3CEAB025E9206E006D1966;
+			remoteInfo = Tournament;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA3CEAB125E9206E006D1966 /* Tournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3CEAB425E9206E006D1966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA3CEABB25E9206E006D1966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA3CEABE25E9206E006D1966 /* Tournament.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tournament.xcdatamodel; sourceTree = "<group>"; };
+		CA3CEAC025E92071006D1966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA3CEAC325E92071006D1966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA3CEAC525E92071006D1966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3CEACA25E92071006D1966 /* TournamentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TournamentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3CEACE25E92071006D1966 /* TournamentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentTests.swift; sourceTree = "<group>"; };
+		CA3CEAD025E92071006D1966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3CEAD525E92071006D1966 /* TournamentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TournamentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3CEAD925E92071006D1966 /* TournamentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentUITests.swift; sourceTree = "<group>"; };
+		CA3CEADB25E92071006D1966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA3CEB0025E920D3006D1966 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CA3CEB0225E920D3006D1966 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		CA3CEB0425E920D3006D1966 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA3CEB0625E920D3006D1966 /* HomeViewInterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewInterator.swift; sourceTree = "<group>"; };
+		CA3CEB0825E920D3006D1966 /* HomeViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		CA3CEB0C25E920D3006D1966 /* NameAndImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAndImageCell.swift; sourceTree = "<group>"; };
+		CA3CEB0D25E920D3006D1966 /* NameAndImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndImageCell.xib; sourceTree = "<group>"; };
+		CA3CEB0F25E920D3006D1966 /* UIFont+TMFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+TMFont.swift"; sourceTree = "<group>"; };
+		CA3CEB1025E920D3006D1966 /* UILable+TMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+TMLabel.swift"; sourceTree = "<group>"; };
+		CA3CEB1125E920D3006D1966 /* UITableView+TMTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TMTable.swift"; sourceTree = "<group>"; };
+		CA3CEB1225E920D3006D1966 /* UIColor+TMColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+TMColor.swift"; sourceTree = "<group>"; };
+		CA3CEB1325E920D3006D1966 /* UIButton+TMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+TMButton.swift"; sourceTree = "<group>"; };
+		CA3CEB1425E920D3006D1966 /* UIImageView+TMImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+TMImageView.swift"; sourceTree = "<group>"; };
+		CA3CEB1925E920D3006D1966 /* TournamenrListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamenrListModel.swift; sourceTree = "<group>"; };
+		CA3CEB1B25E920D3006D1966 /* TournamentListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentListPresenter.swift; sourceTree = "<group>"; };
+		CA3CEB1D25E920D3006D1966 /* TournamentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentListViewController.swift; sourceTree = "<group>"; };
+		CA3CEB1E25E920D3006D1966 /* TournamentListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentListCell.swift; sourceTree = "<group>"; };
+		CA3CEB1F25E920D3006D1966 /* TournamentListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TournamentListCell.xib; sourceTree = "<group>"; };
+		CA3CEB2125E920D3006D1966 /* TournamentListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentListInteractor.swift; sourceTree = "<group>"; };
+		CA3CEB2325E920D3006D1966 /* TournamentListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TournamentListRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA3CEAAE25E9206E006D1966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAC725E92071006D1966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAD225E92071006D1966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA3CEAA825E9206E006D1966 = {
+			isa = PBXGroup;
+			children = (
+				CA3CEAB325E9206E006D1966 /* Tournament */,
+				CA3CEACD25E92071006D1966 /* TournamentTests */,
+				CA3CEAD825E92071006D1966 /* TournamentUITests */,
+				CA3CEAB225E9206E006D1966 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA3CEAB225E9206E006D1966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEAB125E9206E006D1966 /* Tournament.app */,
+				CA3CEACA25E92071006D1966 /* TournamentTests.xctest */,
+				CA3CEAD525E92071006D1966 /* TournamentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA3CEAB325E9206E006D1966 /* Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0925E920D3006D1966 /* Common */,
+				CA3CEAFE25E920D3006D1966 /* Home */,
+				CA3CEB1525E920D3006D1966 /* Players */,
+				CA3CEAFD25E920D3006D1966 /* Teams */,
+				CA3CEB1625E920D3006D1966 /* Tournaments */,
+				CA3CEAB425E9206E006D1966 /* AppDelegate.swift */,
+				CA3CEABA25E9206E006D1966 /* Main.storyboard */,
+				CA3CEAC025E92071006D1966 /* Assets.xcassets */,
+				CA3CEAC225E92071006D1966 /* LaunchScreen.storyboard */,
+				CA3CEAC525E92071006D1966 /* Info.plist */,
+				CA3CEABD25E9206E006D1966 /* Tournament.xcdatamodeld */,
+			);
+			path = Tournament;
+			sourceTree = "<group>";
+		};
+		CA3CEACD25E92071006D1966 /* TournamentTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEACE25E92071006D1966 /* TournamentTests.swift */,
+				CA3CEAD025E92071006D1966 /* Info.plist */,
+			);
+			path = TournamentTests;
+			sourceTree = "<group>";
+		};
+		CA3CEAD825E92071006D1966 /* TournamentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEAD925E92071006D1966 /* TournamentUITests.swift */,
+				CA3CEADB25E92071006D1966 /* Info.plist */,
+			);
+			path = TournamentUITests;
+			sourceTree = "<group>";
+		};
+		CA3CEAFD25E920D3006D1966 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		CA3CEAFE25E920D3006D1966 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEAFF25E920D3006D1966 /* Entity */,
+				CA3CEB0125E920D3006D1966 /* Presenter */,
+				CA3CEB0325E920D3006D1966 /* View */,
+				CA3CEB0525E920D3006D1966 /* Interactor */,
+				CA3CEB0725E920D3006D1966 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CA3CEAFF25E920D3006D1966 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0025E920D3006D1966 /* HomeViewModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA3CEB0125E920D3006D1966 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0225E920D3006D1966 /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA3CEB0325E920D3006D1966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0425E920D3006D1966 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA3CEB0525E920D3006D1966 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0625E920D3006D1966 /* HomeViewInterator.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA3CEB0725E920D3006D1966 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0825E920D3006D1966 /* HomeViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CA3CEB0925E920D3006D1966 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0A25E920D3006D1966 /* Views */,
+				CA3CEB0E25E920D3006D1966 /* Ententions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CA3CEB0A25E920D3006D1966 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0B25E920D3006D1966 /* NameAndImageListCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA3CEB0B25E920D3006D1966 /* NameAndImageListCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0C25E920D3006D1966 /* NameAndImageCell.swift */,
+				CA3CEB0D25E920D3006D1966 /* NameAndImageCell.xib */,
+			);
+			path = NameAndImageListCell;
+			sourceTree = "<group>";
+		};
+		CA3CEB0E25E920D3006D1966 /* Ententions */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB0F25E920D3006D1966 /* UIFont+TMFont.swift */,
+				CA3CEB1025E920D3006D1966 /* UILable+TMLabel.swift */,
+				CA3CEB1125E920D3006D1966 /* UITableView+TMTable.swift */,
+				CA3CEB1225E920D3006D1966 /* UIColor+TMColor.swift */,
+				CA3CEB1325E920D3006D1966 /* UIButton+TMButton.swift */,
+				CA3CEB1425E920D3006D1966 /* UIImageView+TMImageView.swift */,
+			);
+			path = Ententions;
+			sourceTree = "<group>";
+		};
+		CA3CEB1525E920D3006D1966 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		CA3CEB1625E920D3006D1966 /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB1725E920D3006D1966 /* TournamentList */,
+			);
+			path = Tournaments;
+			sourceTree = "<group>";
+		};
+		CA3CEB1725E920D3006D1966 /* TournamentList */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB1825E920D3006D1966 /* Entity */,
+				CA3CEB1A25E920D3006D1966 /* Presenter */,
+				CA3CEB1C25E920D3006D1966 /* View */,
+				CA3CEB2025E920D3006D1966 /* Interactor */,
+				CA3CEB2225E920D3006D1966 /* Router */,
+			);
+			path = TournamentList;
+			sourceTree = "<group>";
+		};
+		CA3CEB1825E920D3006D1966 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB1925E920D3006D1966 /* TournamenrListModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA3CEB1A25E920D3006D1966 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB1B25E920D3006D1966 /* TournamentListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA3CEB1C25E920D3006D1966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB1D25E920D3006D1966 /* TournamentListViewController.swift */,
+				CA3CEB1E25E920D3006D1966 /* TournamentListCell.swift */,
+				CA3CEB1F25E920D3006D1966 /* TournamentListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA3CEB2025E920D3006D1966 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB2125E920D3006D1966 /* TournamentListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA3CEB2225E920D3006D1966 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA3CEB2325E920D3006D1966 /* TournamentListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA3CEAB025E9206E006D1966 /* Tournament */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CEADE25E92071006D1966 /* Build configuration list for PBXNativeTarget "Tournament" */;
+			buildPhases = (
+				CA3CEAAD25E9206E006D1966 /* Sources */,
+				CA3CEAAE25E9206E006D1966 /* Frameworks */,
+				CA3CEAAF25E9206E006D1966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tournament;
+			productName = Tournament;
+			productReference = CA3CEAB125E9206E006D1966 /* Tournament.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA3CEAC925E92071006D1966 /* TournamentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CEAE125E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentTests" */;
+			buildPhases = (
+				CA3CEAC625E92071006D1966 /* Sources */,
+				CA3CEAC725E92071006D1966 /* Frameworks */,
+				CA3CEAC825E92071006D1966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA3CEACC25E92071006D1966 /* PBXTargetDependency */,
+			);
+			name = TournamentTests;
+			productName = TournamentTests;
+			productReference = CA3CEACA25E92071006D1966 /* TournamentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA3CEAD425E92071006D1966 /* TournamentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CEAE425E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentUITests" */;
+			buildPhases = (
+				CA3CEAD125E92071006D1966 /* Sources */,
+				CA3CEAD225E92071006D1966 /* Frameworks */,
+				CA3CEAD325E92071006D1966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA3CEAD725E92071006D1966 /* PBXTargetDependency */,
+			);
+			name = TournamentUITests;
+			productName = TournamentUITests;
+			productReference = CA3CEAD525E92071006D1966 /* TournamentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA3CEAA925E9206E006D1966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CA3CEAB025E9206E006D1966 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CA3CEAC925E92071006D1966 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CA3CEAB025E9206E006D1966;
+					};
+					CA3CEAD425E92071006D1966 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CA3CEAB025E9206E006D1966;
+					};
+				};
+			};
+			buildConfigurationList = CA3CEAAC25E9206E006D1966 /* Build configuration list for PBXProject "Tournament" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA3CEAA825E9206E006D1966;
+			productRefGroup = CA3CEAB225E9206E006D1966 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA3CEAB025E9206E006D1966 /* Tournament */,
+				CA3CEAC925E92071006D1966 /* TournamentTests */,
+				CA3CEAD425E92071006D1966 /* TournamentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA3CEAAF25E9206E006D1966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3CEB2A25E920D3006D1966 /* NameAndImageCell.xib in Resources */,
+				CA3CEB3525E920D3006D1966 /* TournamentListCell.xib in Resources */,
+				CA3CEAC425E92071006D1966 /* LaunchScreen.storyboard in Resources */,
+				CA3CEAC125E92071006D1966 /* Assets.xcassets in Resources */,
+				CA3CEABC25E9206E006D1966 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAC825E92071006D1966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAD325E92071006D1966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA3CEAAD25E9206E006D1966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3CEB2925E920D3006D1966 /* NameAndImageCell.swift in Sources */,
+				CA3CEB2F25E920D3006D1966 /* UIButton+TMButton.swift in Sources */,
+				CA3CEB2625E920D3006D1966 /* HomeViewController.swift in Sources */,
+				CA3CEB2D25E920D3006D1966 /* UITableView+TMTable.swift in Sources */,
+				CA3CEABF25E9206E006D1966 /* Tournament.xcdatamodeld in Sources */,
+				CA3CEB3325E920D3006D1966 /* TournamentListViewController.swift in Sources */,
+				CA3CEB2E25E920D3006D1966 /* UIColor+TMColor.swift in Sources */,
+				CA3CEB3125E920D3006D1966 /* TournamenrListModel.swift in Sources */,
+				CA3CEB3025E920D3006D1966 /* UIImageView+TMImageView.swift in Sources */,
+				CA3CEB2425E920D3006D1966 /* HomeViewModel.swift in Sources */,
+				CA3CEB3625E920D3006D1966 /* TournamentListInteractor.swift in Sources */,
+				CA3CEB3725E920D3006D1966 /* TournamentListRouter.swift in Sources */,
+				CA3CEB3425E920D3006D1966 /* TournamentListCell.swift in Sources */,
+				CA3CEB3225E920D3006D1966 /* TournamentListPresenter.swift in Sources */,
+				CA3CEB2C25E920D3006D1966 /* UILable+TMLabel.swift in Sources */,
+				CA3CEB2525E920D3006D1966 /* HomeViewPresenter.swift in Sources */,
+				CA3CEB2B25E920D3006D1966 /* UIFont+TMFont.swift in Sources */,
+				CA3CEB2725E920D3006D1966 /* HomeViewInterator.swift in Sources */,
+				CA3CEAB525E9206E006D1966 /* AppDelegate.swift in Sources */,
+				CA3CEB2825E920D3006D1966 /* HomeViewRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAC625E92071006D1966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3CEACF25E92071006D1966 /* TournamentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3CEAD125E92071006D1966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3CEADA25E92071006D1966 /* TournamentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA3CEACC25E92071006D1966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA3CEAB025E9206E006D1966 /* Tournament */;
+			targetProxy = CA3CEACB25E92071006D1966 /* PBXContainerItemProxy */;
+		};
+		CA3CEAD725E92071006D1966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA3CEAB025E9206E006D1966 /* Tournament */;
+			targetProxy = CA3CEAD625E92071006D1966 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA3CEABA25E9206E006D1966 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA3CEABB25E9206E006D1966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA3CEAC225E92071006D1966 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA3CEAC325E92071006D1966 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA3CEADC25E92071006D1966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA3CEADD25E92071006D1966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA3CEADF25E92071006D1966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tournament/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.Tournament;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA3CEAE025E92071006D1966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tournament/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.Tournament;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA3CEAE225E92071006D1966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TournamentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.TournamentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament";
+			};
+			name = Debug;
+		};
+		CA3CEAE325E92071006D1966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TournamentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.TournamentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament";
+			};
+			name = Release;
+		};
+		CA3CEAE525E92071006D1966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TournamentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.TournamentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tournament;
+			};
+			name = Debug;
+		};
+		CA3CEAE625E92071006D1966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TournamentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mayank.TournamentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tournament;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA3CEAAC25E9206E006D1966 /* Build configuration list for PBXProject "Tournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CEADC25E92071006D1966 /* Debug */,
+				CA3CEADD25E92071006D1966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3CEADE25E92071006D1966 /* Build configuration list for PBXNativeTarget "Tournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CEADF25E92071006D1966 /* Debug */,
+				CA3CEAE025E92071006D1966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3CEAE125E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CEAE225E92071006D1966 /* Debug */,
+				CA3CEAE325E92071006D1966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3CEAE425E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CEAE525E92071006D1966 /* Debug */,
+				CA3CEAE625E92071006D1966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA3CEABD25E9206E006D1966 /* Tournament.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA3CEABE25E9206E006D1966 /* Tournament.xcdatamodel */,
+			);
+			currentVersion = CA3CEABE25E9206E006D1966 /* Tournament.xcdatamodel */;
+			path = Tournament.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CA3CEAA925E9206E006D1966 /* Project object */;
+}

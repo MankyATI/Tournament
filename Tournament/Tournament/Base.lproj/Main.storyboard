@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="bsP-Vt-hvF">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="wdl-hN-c9F" customClass="HomeViewController" customModule="Tournament" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzE-TB-JPL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zjI-pj-D8c">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wdl-hN-c9F" id="lfj-n4-Qdc"/>
+                                    <outlet property="delegate" destination="wdl-hN-c9F" id="7vz-gS-SaY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="atX-sl-qxG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="atX-sl-qxG" firstAttribute="trailing" secondItem="zjI-pj-D8c" secondAttribute="trailing" id="2gS-QI-sdl"/>
+                            <constraint firstItem="atX-sl-qxG" firstAttribute="bottom" secondItem="zjI-pj-D8c" secondAttribute="bottom" id="GRF-ue-BXd"/>
+                            <constraint firstItem="zjI-pj-D8c" firstAttribute="top" secondItem="atX-sl-qxG" secondAttribute="top" id="M9E-lF-l2j"/>
+                            <constraint firstItem="zjI-pj-D8c" firstAttribute="leading" secondItem="atX-sl-qxG" secondAttribute="leading" id="P7T-NL-969"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9dJ-gQ-NCR"/>
+                    <connections>
+                        <outlet property="homeTable" destination="zjI-pj-D8c" id="amT-6U-QXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z00-aM-0Ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914.49275362318849" y="732.58928571428567"/>
+        </scene>
+        <!--Tournament List View Controller-->
+        <scene sceneID="52i-ZS-UtL">
+            <objects>
+                <viewController storyboardIdentifier="TournamentListViewController" id="CsV-MR-Znn" customClass="TournamentListViewController" customModule="Tournament" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7L6-rU-DYi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H1u-kh-7ct">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CsV-MR-Znn" id="eJJ-1e-e5w"/>
+                                    <outlet property="delegate" destination="CsV-MR-Znn" id="Et8-rT-H53"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ry-Pw-tNc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H1u-kh-7ct" firstAttribute="leading" secondItem="5ry-Pw-tNc" secondAttribute="leading" id="Pso-Qo-dg7"/>
+                            <constraint firstItem="H1u-kh-7ct" firstAttribute="top" secondItem="5ry-Pw-tNc" secondAttribute="top" id="TWf-l9-ZIe"/>
+                            <constraint firstItem="5ry-Pw-tNc" firstAttribute="trailing" secondItem="H1u-kh-7ct" secondAttribute="trailing" id="uyC-JM-bCg"/>
+                            <constraint firstItem="5ry-Pw-tNc" firstAttribute="bottom" secondItem="H1u-kh-7ct" secondAttribute="bottom" id="yK7-4Q-Ix4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tournamentListTable" destination="H1u-kh-7ct" id="OC3-sU-Q4w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXb-KX-x05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117.39130434782609" y="732.58928571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
