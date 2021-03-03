@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DA38DCC7F8F5FE93181FBC8 /* Pods_Tournament_TournamentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E34BAC2660D3D51B7EC83B /* Pods_Tournament_TournamentUITests.framework */; };
+		6A3907610D6D0D60CB2C716E /* Pods_Tournament.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8049B4A548C017B1392EB979 /* Pods_Tournament.framework */; };
+		73F485F0EC306DE1CB3F520D /* Pods_TournamentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B34D3CABFB4B56321B54EB0 /* Pods_TournamentTests.framework */; };
+		CA0D840125EE558E00D0D4D4 /* ApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D840025EE558E00D0D4D4 /* ApiHandler.swift */; };
+		CA0D841425EFBAC100D0D4D4 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D841325EFBAC100D0D4D4 /* AddPlayerViewController.swift */; };
+		CA0D841C25EFBACC00D0D4D4 /* AddPlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D841B25EFBACC00D0D4D4 /* AddPlayerInteractor.swift */; };
+		CA0D842125EFBAD600D0D4D4 /* AddPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D842025EFBAD600D0D4D4 /* AddPlayerPresenter.swift */; };
+		CA0D842625EFBADF00D0D4D4 /* AddPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D842525EFBADF00D0D4D4 /* AddPlayerModel.swift */; };
+		CA0D842B25EFBAE800D0D4D4 /* AddPlayerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D842A25EFBAE800D0D4D4 /* AddPlayerRouter.swift */; };
+		CA2833E625EA49B400EFAE7D /* PlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833E425EA49B400EFAE7D /* PlayersCell.swift */; };
+		CA2833E725EA49B400EFAE7D /* PlayersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA2833E525EA49B400EFAE7D /* PlayersCell.xib */; };
+		CA2833EC25EA49CC00EFAE7D /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833EB25EA49CC00EFAE7D /* PlayersViewController.swift */; };
+		CA2833F125EA49F100EFAE7D /* PlayersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833F025EA49F100EFAE7D /* PlayersInteractor.swift */; };
+		CA2833F625EA49FC00EFAE7D /* PlayersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833F525EA49FC00EFAE7D /* PlayersPresenter.swift */; };
+		CA2833FB25EA4A0C00EFAE7D /* PlayersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833FA25EA4A0C00EFAE7D /* PlayersModel.swift */; };
+		CA28340025EA4A1900EFAE7D /* PlayersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2833FF25EA4A1900EFAE7D /* PlayersRouter.swift */; };
 		CA3CEAB525E9206E006D1966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEAB425E9206E006D1966 /* AppDelegate.swift */; };
 		CA3CEABC25E9206E006D1966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3CEABA25E9206E006D1966 /* Main.storyboard */; };
 		CA3CEABF25E9206E006D1966 /* Tournament.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA3CEABD25E9206E006D1966 /* Tournament.xcdatamodeld */; };
@@ -54,6 +70,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141F44F823D695D860BE3ACD /* Pods-TournamentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentTests.release.xcconfig"; path = "Target Support Files/Pods-TournamentTests/Pods-TournamentTests.release.xcconfig"; sourceTree = "<group>"; };
+		35582CAC5C3EA29C9EF3C939 /* Pods-Tournament-TournamentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tournament-TournamentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tournament-TournamentUITests/Pods-Tournament-TournamentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC07F16C9830D50E5FA7584 /* Pods-Tournament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tournament.release.xcconfig"; path = "Target Support Files/Pods-Tournament/Pods-Tournament.release.xcconfig"; sourceTree = "<group>"; };
+		44D981A0471BF6737C87CA66 /* Pods-Tournament-TournamentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tournament-TournamentUITests.release.xcconfig"; path = "Target Support Files/Pods-Tournament-TournamentUITests/Pods-Tournament-TournamentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B34D3CABFB4B56321B54EB0 /* Pods_TournamentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TournamentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E34BAC2660D3D51B7EC83B /* Pods_Tournament_TournamentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tournament_TournamentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8049B4A548C017B1392EB979 /* Pods_Tournament.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tournament.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C192771031E57F84696BF4F /* Pods-TournamentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TournamentTests.debug.xcconfig"; path = "Target Support Files/Pods-TournamentTests/Pods-TournamentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6C00B061DF4FAEB7083E2AE /* Pods-Tournament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tournament.debug.xcconfig"; path = "Target Support Files/Pods-Tournament/Pods-Tournament.debug.xcconfig"; sourceTree = "<group>"; };
+		CA0D840025EE558E00D0D4D4 /* ApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHandler.swift; sourceTree = "<group>"; };
+		CA0D841325EFBAC100D0D4D4 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
+		CA0D841B25EFBACC00D0D4D4 /* AddPlayerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerInteractor.swift; sourceTree = "<group>"; };
+		CA0D842025EFBAD600D0D4D4 /* AddPlayerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerPresenter.swift; sourceTree = "<group>"; };
+		CA0D842525EFBADF00D0D4D4 /* AddPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerModel.swift; sourceTree = "<group>"; };
+		CA0D842A25EFBAE800D0D4D4 /* AddPlayerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerRouter.swift; sourceTree = "<group>"; };
+		CA2833E425EA49B400EFAE7D /* PlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersCell.swift; sourceTree = "<group>"; };
+		CA2833E525EA49B400EFAE7D /* PlayersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersCell.xib; sourceTree = "<group>"; };
+		CA2833EB25EA49CC00EFAE7D /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		CA2833F025EA49F100EFAE7D /* PlayersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersInteractor.swift; sourceTree = "<group>"; };
+		CA2833F525EA49FC00EFAE7D /* PlayersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersPresenter.swift; sourceTree = "<group>"; };
+		CA2833FA25EA4A0C00EFAE7D /* PlayersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersModel.swift; sourceTree = "<group>"; };
+		CA2833FF25EA4A1900EFAE7D /* PlayersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersRouter.swift; sourceTree = "<group>"; };
 		CA3CEAB125E9206E006D1966 /* Tournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3CEAB425E9206E006D1966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3CEABB25E9206E006D1966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3907610D6D0D60CB2C716E /* Pods_Tournament.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F485F0EC306DE1CB3F520D /* Pods_TournamentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +148,157 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA38DCC7F8F5FE93181FBC8 /* Pods_Tournament_TournamentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7627B7DF5BE0174615FCDCD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C00B061DF4FAEB7083E2AE /* Pods-Tournament.debug.xcconfig */,
+				3DC07F16C9830D50E5FA7584 /* Pods-Tournament.release.xcconfig */,
+				35582CAC5C3EA29C9EF3C939 /* Pods-Tournament-TournamentUITests.debug.xcconfig */,
+				44D981A0471BF6737C87CA66 /* Pods-Tournament-TournamentUITests.release.xcconfig */,
+				8C192771031E57F84696BF4F /* Pods-TournamentTests.debug.xcconfig */,
+				141F44F823D695D860BE3ACD /* Pods-TournamentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		958C6DE2937B7BC634840BED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8049B4A548C017B1392EB979 /* Pods_Tournament.framework */,
+				74E34BAC2660D3D51B7EC83B /* Pods_Tournament_TournamentUITests.framework */,
+				5B34D3CABFB4B56321B54EB0 /* Pods_TournamentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA0D83FF25EE54DA00D0D4D4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D840025EE558E00D0D4D4 /* ApiHandler.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CA0D840B25EFBA4F00D0D4D4 /* PlayerList */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833E325EA27EA00EFAE7D /* View */,
+				CA2833E225EA27E400EFAE7D /* Interator */,
+				CA2833E125EA27DE00EFAE7D /* Presenter */,
+				CA2833E025EA27D600EFAE7D /* Entity */,
+				CA2833DF25EA27CF00EFAE7D /* Router */,
+			);
+			path = PlayerList;
+			sourceTree = "<group>";
+		};
+		CA0D840C25EFBA5F00D0D4D4 /* Add Player */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D841225EFBAA100D0D4D4 /* View */,
+				CA0D841125EFBA9A00D0D4D4 /* Interactor */,
+				CA0D841025EFBA9400D0D4D4 /* Presenter */,
+				CA0D840F25EFBA8E00D0D4D4 /* Entity */,
+				CA0D840E25EFBA8900D0D4D4 /* Router */,
+			);
+			path = "Add Player";
+			sourceTree = "<group>";
+		};
+		CA0D840D25EFBA6D00D0D4D4 /* View Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Player";
+			sourceTree = "<group>";
+		};
+		CA0D840E25EFBA8900D0D4D4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D842A25EFBAE800D0D4D4 /* AddPlayerRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CA0D840F25EFBA8E00D0D4D4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D842525EFBADF00D0D4D4 /* AddPlayerModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA0D841025EFBA9400D0D4D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D842025EFBAD600D0D4D4 /* AddPlayerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA0D841125EFBA9A00D0D4D4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D841B25EFBACC00D0D4D4 /* AddPlayerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA0D841225EFBAA100D0D4D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D841325EFBAC100D0D4D4 /* AddPlayerViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA2833DF25EA27CF00EFAE7D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833FF25EA4A1900EFAE7D /* PlayersRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CA2833E025EA27D600EFAE7D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833FA25EA4A0C00EFAE7D /* PlayersModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CA2833E125EA27DE00EFAE7D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833F525EA49FC00EFAE7D /* PlayersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA2833E225EA27E400EFAE7D /* Interator */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833F025EA49F100EFAE7D /* PlayersInteractor.swift */,
+			);
+			path = Interator;
+			sourceTree = "<group>";
+		};
+		CA2833E325EA27EA00EFAE7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA2833EB25EA49CC00EFAE7D /* PlayersViewController.swift */,
+				CA2833E425EA49B400EFAE7D /* PlayersCell.swift */,
+				CA2833E525EA49B400EFAE7D /* PlayersCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CA3CEAA825E9206E006D1966 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +306,8 @@
 				CA3CEACD25E92071006D1966 /* TournamentTests */,
 				CA3CEAD825E92071006D1966 /* TournamentUITests */,
 				CA3CEAB225E9206E006D1966 /* Products */,
+				7627B7DF5BE0174615FCDCD5 /* Pods */,
+				958C6DE2937B7BC634840BED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,10 +367,10 @@
 		CA3CEAFE25E920D3006D1966 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CA3CEAFF25E920D3006D1966 /* Entity */,
-				CA3CEB0125E920D3006D1966 /* Presenter */,
 				CA3CEB0325E920D3006D1966 /* View */,
 				CA3CEB0525E920D3006D1966 /* Interactor */,
+				CA3CEB0125E920D3006D1966 /* Presenter */,
+				CA3CEAFF25E920D3006D1966 /* Entity */,
 				CA3CEB0725E920D3006D1966 /* Router */,
 			);
 			path = Home;
@@ -232,6 +419,7 @@
 		CA3CEB0925E920D3006D1966 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CA0D83FF25EE54DA00D0D4D4 /* API */,
 				CA3CEB0A25E920D3006D1966 /* Views */,
 				CA3CEB0E25E920D3006D1966 /* Ententions */,
 			);
@@ -271,6 +459,9 @@
 		CA3CEB1525E920D3006D1966 /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				CA0D840D25EFBA6D00D0D4D4 /* View Player */,
+				CA0D840C25EFBA5F00D0D4D4 /* Add Player */,
+				CA0D840B25EFBA4F00D0D4D4 /* PlayerList */,
 			);
 			path = Players;
 			sourceTree = "<group>";
@@ -344,6 +535,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3CEADE25E92071006D1966 /* Build configuration list for PBXNativeTarget "Tournament" */;
 			buildPhases = (
+				C0D93D42383C1C00856C4D0A /* [CP] Check Pods Manifest.lock */,
 				CA3CEAAD25E9206E006D1966 /* Sources */,
 				CA3CEAAE25E9206E006D1966 /* Frameworks */,
 				CA3CEAAF25E9206E006D1966 /* Resources */,
@@ -361,6 +553,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3CEAE125E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentTests" */;
 			buildPhases = (
+				081927331FD85C42A8F9DD5D /* [CP] Check Pods Manifest.lock */,
 				CA3CEAC625E92071006D1966 /* Sources */,
 				CA3CEAC725E92071006D1966 /* Frameworks */,
 				CA3CEAC825E92071006D1966 /* Resources */,
@@ -379,6 +572,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3CEAE425E92071006D1966 /* Build configuration list for PBXNativeTarget "TournamentUITests" */;
 			buildPhases = (
+				B444ED1A6BC90F73B37E5E79 /* [CP] Check Pods Manifest.lock */,
 				CA3CEAD125E92071006D1966 /* Sources */,
 				CA3CEAD225E92071006D1966 /* Frameworks */,
 				CA3CEAD325E92071006D1966 /* Resources */,
@@ -444,6 +638,7 @@
 				CA3CEB3525E920D3006D1966 /* TournamentListCell.xib in Resources */,
 				CA3CEAC425E92071006D1966 /* LaunchScreen.storyboard in Resources */,
 				CA3CEAC125E92071006D1966 /* Assets.xcassets in Resources */,
+				CA2833E725EA49B400EFAE7D /* PlayersCell.xib in Resources */,
 				CA3CEABC25E9206E006D1966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +659,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		081927331FD85C42A8F9DD5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TournamentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B444ED1A6BC90F73B37E5E79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tournament-TournamentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D93D42383C1C00856C4D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tournament-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA3CEAAD25E9206E006D1966 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -471,13 +735,22 @@
 			files = (
 				CA3CEB2925E920D3006D1966 /* NameAndImageCell.swift in Sources */,
 				CA3CEB2F25E920D3006D1966 /* UIButton+TMButton.swift in Sources */,
+				CA2833F125EA49F100EFAE7D /* PlayersInteractor.swift in Sources */,
 				CA3CEB2625E920D3006D1966 /* HomeViewController.swift in Sources */,
+				CA2833EC25EA49CC00EFAE7D /* PlayersViewController.swift in Sources */,
+				CA28340025EA4A1900EFAE7D /* PlayersRouter.swift in Sources */,
 				CA3CEB2D25E920D3006D1966 /* UITableView+TMTable.swift in Sources */,
+				CA0D842B25EFBAE800D0D4D4 /* AddPlayerRouter.swift in Sources */,
 				CA3CEABF25E9206E006D1966 /* Tournament.xcdatamodeld in Sources */,
 				CA3CEB3325E920D3006D1966 /* TournamentListViewController.swift in Sources */,
 				CA3CEB2E25E920D3006D1966 /* UIColor+TMColor.swift in Sources */,
+				CA0D842625EFBADF00D0D4D4 /* AddPlayerModel.swift in Sources */,
+				CA2833F625EA49FC00EFAE7D /* PlayersPresenter.swift in Sources */,
 				CA3CEB3125E920D3006D1966 /* TournamenrListModel.swift in Sources */,
 				CA3CEB3025E920D3006D1966 /* UIImageView+TMImageView.swift in Sources */,
+				CA0D841C25EFBACC00D0D4D4 /* AddPlayerInteractor.swift in Sources */,
+				CA0D840125EE558E00D0D4D4 /* ApiHandler.swift in Sources */,
+				CA0D842125EFBAD600D0D4D4 /* AddPlayerPresenter.swift in Sources */,
 				CA3CEB2425E920D3006D1966 /* HomeViewModel.swift in Sources */,
 				CA3CEB3625E920D3006D1966 /* TournamentListInteractor.swift in Sources */,
 				CA3CEB3725E920D3006D1966 /* TournamentListRouter.swift in Sources */,
@@ -485,10 +758,13 @@
 				CA3CEB3225E920D3006D1966 /* TournamentListPresenter.swift in Sources */,
 				CA3CEB2C25E920D3006D1966 /* UILable+TMLabel.swift in Sources */,
 				CA3CEB2525E920D3006D1966 /* HomeViewPresenter.swift in Sources */,
+				CA0D841425EFBAC100D0D4D4 /* AddPlayerViewController.swift in Sources */,
 				CA3CEB2B25E920D3006D1966 /* UIFont+TMFont.swift in Sources */,
 				CA3CEB2725E920D3006D1966 /* HomeViewInterator.swift in Sources */,
+				CA2833E625EA49B400EFAE7D /* PlayersCell.swift in Sources */,
 				CA3CEAB525E9206E006D1966 /* AppDelegate.swift in Sources */,
 				CA3CEB2825E920D3006D1966 /* HomeViewRouter.swift in Sources */,
+				CA2833FB25EA4A0C00EFAE7D /* PlayersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +937,7 @@
 		};
 		CA3CEADF25E92071006D1966 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C00B061DF4FAEB7083E2AE /* Pods-Tournament.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -679,6 +956,7 @@
 		};
 		CA3CEAE025E92071006D1966 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC07F16C9830D50E5FA7584 /* Pods-Tournament.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -697,6 +975,7 @@
 		};
 		CA3CEAE225E92071006D1966 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C192771031E57F84696BF4F /* Pods-TournamentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -718,6 +997,7 @@
 		};
 		CA3CEAE325E92071006D1966 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141F44F823D695D860BE3ACD /* Pods-TournamentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -739,6 +1019,7 @@
 		};
 		CA3CEAE525E92071006D1966 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35582CAC5C3EA29C9EF3C939 /* Pods-Tournament-TournamentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -758,6 +1039,7 @@
 		};
 		CA3CEAE625E92071006D1966 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D981A0471BF6737C87CA66 /* Pods-Tournament-TournamentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

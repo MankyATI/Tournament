@@ -77,6 +77,40 @@
             </objects>
             <point key="canvasLocation" x="-117.39130434782609" y="732.58928571428567"/>
         </scene>
+        <!--Players View Controller-->
+        <scene sceneID="Ayv-q0-j98">
+            <objects>
+                <viewController storyboardIdentifier="PlayersViewController" id="BKd-p9-qVX" customClass="PlayersViewController" customModule="Tournament" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1He-mD-Awf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2VY-h2-h6i">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BKd-p9-qVX" id="CJP-dV-nlU"/>
+                                    <outlet property="delegate" destination="BKd-p9-qVX" id="Dlt-u2-eEq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R25-4l-1cb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2VY-h2-h6i" firstAttribute="top" secondItem="R25-4l-1cb" secondAttribute="top" id="6Gq-2Q-ycf"/>
+                            <constraint firstItem="R25-4l-1cb" firstAttribute="bottom" secondItem="2VY-h2-h6i" secondAttribute="bottom" id="Huo-jk-1GY"/>
+                            <constraint firstItem="2VY-h2-h6i" firstAttribute="leading" secondItem="R25-4l-1cb" secondAttribute="leading" id="M4F-mW-Vp6"/>
+                            <constraint firstItem="R25-4l-1cb" firstAttribute="trailing" secondItem="2VY-h2-h6i" secondAttribute="trailing" id="nWp-yM-PDk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playersTable" destination="2VY-h2-h6i" id="Wv9-Kb-tUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Anj-Lh-Djl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="59.598214285714285"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

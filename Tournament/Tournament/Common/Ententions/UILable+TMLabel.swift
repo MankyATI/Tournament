@@ -13,11 +13,11 @@ extension UILabel {
         
     }
     
-    func titleText() {
+    func listTitleText() {
         
     }
     
-    func subTitleText() {
+    func listSubTitleText() {
         
     }
     
