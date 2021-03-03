@@ -8,7 +8,6 @@
 import UIKit
 
 protocol HomeViewProtocol {
-    
     func makeHomeTable(homeItems: [HomeModel])
 }
 
@@ -18,24 +17,34 @@ class HomeViewController: UIViewController {
     var homeItemsArray = [HomeModel]()
     @IBOutlet weak var homeTable: UITableView!
     override func viewDidLoad() {
-        
-        homeTable.register(cellClass: NameAndImageCell.self)
         super.viewDidLoad()
+        homeTable.register(cellClass: NameAndImageCell.self)
         if presenter != nil {
             presenter?.updateHome()
         }
-        
+    }
+    
+    private func openPage(index: HomeListType?) {
+        switch index {
+        case .players:
+            let playersList = PlayersRouter.createPlayerListList()
+            self.navigationController?.pushViewController(playersList, animated: true)
+        case .tournament:
+            let tournamentList = TournamentListRouter.createTournamentList()
+            self.navigationController?.pushViewController(tournamentList, animated: true)
+        default:
+            let tournamentList = TournamentListRouter.createTournamentList()
+            self.navigationController?.pushViewController(tournamentList, animated: true)
+        }
     }
 }
  
 extension HomeViewController: HomeViewProtocol {
     func makeHomeTable(homeItems: [HomeModel]) {
         homeItemsArray = homeItems
-        homeTable.reloadData()
+        homeTable.reloadSafe()
     }
 }
-
-
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,11 +59,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tournamentList = TournamentListRouter.createTournamentList()
-        self.navigationController?.pushViewController(tournamentList, animated: true)
-    }
-    
-    private func openPage(index: Int) {
-        
+        self.openPage(index: HomeListType(rawValue: indexPath.row))
     }
 }

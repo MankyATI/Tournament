@@ -10,6 +10,13 @@ import Foundation
 import UIKit
 
 extension UITableView {
+    
+    func reloadSafe()  {
+        DispatchQueue.main.async {
+            self.reloadData()
+        }
+    }
+    
     public func dequeue<T: UITableViewCell>(cellClass: T.Type = T.self, forIndexPath indexPath: IndexPath) -> T {
            guard let cell = dequeueReusableCell(
                withIdentifier: cellClass.reuseIdentifier, for: indexPath) as? T else {

@@ -11,13 +11,13 @@ class TournamentListCell: UITableViewCell {
 
     @IBOutlet weak var tournamentName: UILabel! {
         didSet {
-            tournamentName.titleText()
+            tournamentName.listTitleText()
         }
     }
     
     @IBOutlet weak var organiser: UILabel! {
         didSet {
-            organiser.subTitleText()
+            organiser.listSubTitleText()
         }
     }
     
@@ -29,7 +29,7 @@ class TournamentListCell: UITableViewCell {
     
     @IBOutlet weak var size: UILabel! {
         didSet {
-            size.subTitleText()
+            size.listSubTitleText()
         }
     }
     

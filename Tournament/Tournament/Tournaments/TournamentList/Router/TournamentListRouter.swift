@@ -30,6 +30,4 @@ class TournamentListRouter: TournamentListRouterProtocol {
         interactor.presenter = presenter
         return view
     }
-    
-    
 }

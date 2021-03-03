@@ -13,8 +13,8 @@ struct HomeModel {
     var image: String?
 }
 
-enum HomeListType: String {
-    case tournament = "Tournaments"
-    case team = "Teams"
-    case players = "Players"
+enum HomeListType: Int {
+    case tournament = 0
+    case team = 1
+    case players = 2
 }
